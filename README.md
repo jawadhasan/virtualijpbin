@@ -15,6 +15,7 @@ chmod 755 script.sh
 
 sudo ./VirtualIJP
 
+test
 
 
 
