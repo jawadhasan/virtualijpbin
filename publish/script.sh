@@ -3,11 +3,11 @@ echo "executing BASH...."
 
 PORT_NO=502
 
-PUBLIC_IPADDR="10.50.1.202"
-#PUBLIC_IPADDR=$(hostname -I)
+
+PUBLIC_IPADDR=$(hostname -I) #PUBLIC_IPADDR="10.50.1.202"
 echo "SERVER PUBLIC-IP = ${PUBLIC_IPADDR}"
 
-for i in {1..50}
+for i in {1..20}
 do
    echo "Setup PREROUTING on PORT: $PORT_NO "
    sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport $PORT_NO -j DNAT --to ${PUBLIC_IPADDR}:$PORT_NO
