@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+﻿#!/usr/bin/bash
 echo "executing BASH...."
 
 PORT_NO=502
