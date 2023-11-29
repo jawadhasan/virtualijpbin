@@ -3,7 +3,7 @@ echo "executing BASH...."
 
 PORT_NO=502
 
-for i in {1..20}
+for i in {1..25}
 do
    
    echo "starting app port ${PORT_NO}"
